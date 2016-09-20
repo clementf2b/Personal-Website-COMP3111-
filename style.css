@@ -22,7 +22,7 @@ hr.star-primary {
 }
 hr.star-light:after,
 hr.star-primary:after {
-    content: "]><[";
+    content: "\f006";
     font-family: 'Roboto Slab';
     display: inline-block;
     position: relative;
