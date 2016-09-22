@@ -22,7 +22,7 @@ hr.star-primary {
 }
 hr.star-light:after,
 hr.star-primary:after {
-    content: "]><[";
+    content: "\f006";
     font-family: 'Roboto Slab';
     display: inline-block;
     position: relative;
@@ -72,6 +72,11 @@ body {
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.navbar-inverse {
+    background-color:transparent;
+    border-color:transparent;
+}
+
 p.large {
     font-size: 40px;
 }
@@ -83,10 +88,6 @@ h3.large
     color: #FFFFFF;
 }
 
-.navbar-inner {
-    background:transparent;
-
-}
 html {
     width: 100%;
     height: 100%;
@@ -111,6 +112,7 @@ html {
     {
         width: 100%;
     }
+
     .container{
         width:100%;
         position:relative;
@@ -139,7 +141,7 @@ html {
         transition: background .5s ease-in-out,padding .5s ease-in-out;
         font-size: 17px;
         z-index: 999;
-        opacity: 0.0;
+
     }
 
     .top-nav-collapse {
@@ -148,11 +150,7 @@ html {
         background-image: none;
         border-color: transparent;
         opacity: 1.0;
-    }
-
-    p.navbar-effect:hover
-    {
-        text-shadow: 0 0 5px rgba(255,255,255,0.9);
+        color:rgba(255, 255, 255, 0.6);
     }
 
     .col-sm-12{
@@ -204,6 +202,7 @@ of those sections to manage the look and feel of the site. */
     background-image: url('assets/silver.jpg');
     opacity: 1.0;
 }
+
 
 span.line1 {
     width:700px;

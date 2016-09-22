@@ -5,8 +5,10 @@
 $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
+        $(".navbar-inverse").css("background-color", "#2B2B2B");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
+        $(".navbar-inverse").css("background-color", "transparent");
     }
 });
 
@@ -16,7 +18,9 @@ $(function() {
         event.preventDefault();
         var $anchor = $(this).attr('href');
         $('html, body').animate({
-            scrollTop: $($anchor).offset().top
-        }, 950);
+            scrollTop: $($anchor).offset().top,
+        }, 950
+        );
     });
 });
+
